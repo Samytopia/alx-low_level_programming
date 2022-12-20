@@ -1,22 +1,15 @@
-#include"main.h"
+#include "main.h"
 
 /**
- * print_rev - pprints a string in reverse, followed by a new line
+ * main - check the code
  *
- * @s: string parameter
- *
- * Return: Nothing
+ * Return: Always 0.
  */
-
-void print_rev(char *s)
+int main(void)
 {
-	int index;
+	char *str;
 
-	/*finds the length of string without null character*/
-	for (index = 0; s[index] != '\0'; ++index)
-
-	/*print char from last index as you decrement*/
-	for (--index; index >= 0; ++index)
-		_putchar(s[index]);
-	putchar('\n');
+	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+	print_rev(str);
+	return (0);
 }
