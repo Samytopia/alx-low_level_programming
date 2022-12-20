@@ -1,15 +1,21 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
+ * print_rev - a function that prints a string, in reverse
+ * followed by a new line
+ * @s : variable pointing to char
  * Return: Always 0.
  */
-int main(void)
-{
-	char *str;
 
-	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-	print_rev(str);
-	return (0);
+void print_rev(char *s)
+{
+	int c;
+
+	for (c = 0; s[c] != 0; c++)
+	{
+	}
+	for (c = c - 1; c >= 0; c--)
+		_putchar(s[c]);
+	_putchar('\n');
+
 }
