@@ -1,9 +1,5 @@
-/**
- * File: MAIN_H
- * Author: Samson Solomon Allahanana
- * Desc: Header file containing prototypes for all functions
- * and _puchar prototype used in the directory; ALX SE program.
- */
+#ifndef MAIN_H
+#define MAIN_H
 
 int _putchar(char c);
 
@@ -24,3 +20,5 @@ void print_chessboard(char (*a)[8]);
 void print_diagsums(int *a, int size);
 
 void set_string(char **s, char *to);
+
+#endif
