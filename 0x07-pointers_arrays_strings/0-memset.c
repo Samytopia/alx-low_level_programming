@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 
 /**
  * _memset - a function that fills
@@ -27,12 +28,11 @@ char *_memset(char *s, char b, unsigned int n)
 	 * non-negative (zero or positive)
 	*/
 
-	unsigned int a;
+	char *p = s;
 
-	for (a = 0; a < n; i++)
+	while (n--)
 	{
-		s[a] = b;
+		*p++ = b;
 	}
-
 	return (s);
 }
