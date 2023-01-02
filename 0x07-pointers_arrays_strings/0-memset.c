@@ -25,10 +25,7 @@ char *_memset(char *s, char b, unsigned int n)
 	 * value that will always be
 	 * non-negative (zero or positive)
 	*/
-	unsigned int a;
 
-	for (a = 0; a < n; a++)
-		s[a] = b;
 
-	return (s);
+	return (_memset(s, b, n));
 }
