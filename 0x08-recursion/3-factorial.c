@@ -8,7 +8,7 @@
 
 int factorial(int n)
 {
-	printf("%d", n);
+	factorial = n;
 	--n;
 
 	if (n < 0)
